@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "本機驗證碼圖片助手",
+  "version": "0.2.0",
+  "description": "由使用者選取圖片，於本機辨識英文大小寫與數字，檢查圖片更新後填入指定欄位。",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "offscreen"
+  ],
+  "action": {
+    "default_title": "點一下選取驗證碼圖片"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; object-src 'self'; connect-src 'self'; img-src 'self' data: blob:; style-src 'self'"
+  }
+}

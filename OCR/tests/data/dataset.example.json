@@ -1,0 +1,9 @@
+{
+  "source": "Replace with your permitted PNG/JPEG samples",
+  "split": "held-out",
+  "representative": false,
+  "samples": [
+    { "file": "mixed-example.png", "label": "A7b3Z9", "characterMode": "alphanumeric" },
+    { "file": "digits-example.png", "label": "001234", "characterMode": "digits" }
+  ]
+}

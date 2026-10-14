@@ -1,0 +1,20 @@
+{
+  "name": "local-verification-ocr",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:ui": "node scripts/build.mjs --ui-only",
+    "test": "node --test tests/*.test.ts",
+    "test:browser": "node scripts/browser-test.mjs",
+    "fixture": "node scripts/serve.mjs",
+    "evaluate": "node scripts/evaluate.mjs",
+    "assets": "node scripts/assets.mjs",
+    "setup": "node scripts/setup.mjs",
+    "verify": "node scripts/verify-build.mjs"
+  }
+}
